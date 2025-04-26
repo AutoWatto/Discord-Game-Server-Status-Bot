@@ -1,8 +1,8 @@
+![Example](https://github.com/user-attachments/assets/b5a1f9cf-149f-4643-acef-dd44f4eab44c)
+
 # Discord Game Server Status Bot 🎮
 
 A customizable Discord bot that monitors and displays game server status using BattleMetrics API. Originally designed for Arma Reforger but adaptable to any game supported by BattleMetrics.
-
-![Bot Example]  https://imgur.com/a/29zCVL6
 
 ## Features ✨
 - Real-time server monitoring (Online/Offline status)
