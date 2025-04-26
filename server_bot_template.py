@@ -60,9 +60,9 @@ def get_server_data(bm_id):
 
 def build_embed():
     embed = discord.Embed(
-        title="🎮 Arma Reforger Servers Status",
+        title="🎮 YOUR_GAME_NAME Servers Status",
         color=0x00ff00,
-        description="Current status of tracked Arma Reforger servers"
+        description="Current status of tracked Game server(s)"
     )
     
     for server in SERVERS:
@@ -97,8 +97,8 @@ async def on_ready():
     await tree.sync(guild=discord.Object(id=GUILD_ID))
     status_loop.start()
 
-@tree.command(name="armaservers", description="Show current status of Arma Reforger servers", guild=discord.Object(id=GUILD_ID))
-async def armaservers(interaction: discord.Interaction):
+@tree.command(name="GameStatus", description="Show current status of Game servers", guild=discord.Object(id=GUILD_ID))
+async def gamestatus(interaction: discord.Interaction):
     embed = build_embed()
     await interaction.response.send_message(embed=embed)
 
